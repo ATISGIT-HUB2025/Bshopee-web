@@ -466,128 +466,131 @@
       </header>
       <!-- /Header -->
 
-      <!-- awards start -->
+      <!-- Title Page -->
       <section class="tf-page-title">
         <div class="container">
           <div class="box-title text-center">
-            <h4 class="title text-warning">Licensing Agreements</h4>
+            <h4 class="title text-warning">My Account</h4>
             <div class="breadcrumb-list">
               <a class="breadcrumb-item text-white" href="index.html">Home</a>
               <div class="breadcrumb-item dot"><span></span></div>
-              <div class="breadcrumb-item current text-grey-2">
-                Licensing Agreements
-              </div>
+              <div class="breadcrumb-item current text-grey-2">My Account</div>
             </div>
           </div>
         </div>
       </section>
+      <!-- /Title Page -->
 
-      <section class="flat-spacing-24">
-        <div class="container">
-          <div class="mb-5">
-            <div class="flat-title relative mb_5">
-              <h3 class="title fw-normal fst-italic font-3 letter-0">
-                End User License Agreements
-              </h3>
+      <!-- Main Content -->
+      <div class="flat-spacing-13">
+        <div class="container-7">
+          <!-- sidebar-account -->
+          <div class="btn-sidebar-mb d-lg-none">
+            <button data-bs-toggle="offcanvas" data-bs-target="#mbAccount">
+              <i class="icon icon-sidebar"></i>
+            </button>
+          </div>
+          <!-- /sidebar-account -->
+
+          <!-- Section-acount -->
+          <div class="main-content-account">
+            <div
+              class="sidebar-account-wrap sidebar-content-wrap sticky-top d-lg-block d-none"
+            >
+              <ul class="my-account-nav">
+                <li>
+                  <a
+                    href="account-page.html"
+                    class="text-sm link fw-medium my-account-nav-item"
+                    >Dashboard</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="account-orders.html"
+                    class="text-sm link fw-medium my-account-nav-item active"
+                    >My Orders</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="wish-list.html"
+                    class="text-sm link fw-medium my-account-nav-item"
+                    >My Wishlist</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    href="account-details.html"
+                    class="text-sm link fw-medium my-account-nav-item"
+                    >Account Details</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="index.html"
+                    class="text-sm link fw-medium my-account-nav-item"
+                    >Log Out</a
+                  >
+                </li>
+              </ul>
             </div>
-            <div class="row gy-3">
-              <div class="col-lg-3">
-                <div
-                  class="card p-4 hover-overlay animate-dark"
-                  style="cursor: pointer; width: 100%; height: 100px"
-                >
-                  <a href="" class="mb-menu-link" download target="_blank">
-                    <i
-                      class="bi bi-file-pdf text-dark"
-                      style="font-size: 18px"
-                    ></i>
-                    <span class="title">EULA for consumer products </span>
-                  </a>
+            <div class="container">
+              <div class="my-acount-content account-orders">
+                <div class="account-no-orders-wrap">
+                  <img
+                    class="lazyload"
+                    data-src="images/section/account-no-order.png"
+                    src="images/section/account-no-order.png"
+                    alt=""
+                  />
+                  <div class="display-sm fw-medium title">
+                    You haven’t placed any order yet
+                  </div>
+                  <div class="text text-sm">
+                    It’s time to make your first order
+                  </div>
+                  <a
+                    href="shop-fullwidth.html"
+                    class="tf-btn animate-btn d-inline-flex bg-dark-2 justify-content-center"
+                    >Shop Now</a
+                  >
                 </div>
-              </div>
-
-              <div class="col-lg-3">
-                <div
-                  class="card p-4 hover-overlay animate-dark"
-                  style="cursor: pointer; width: 100%; height: 100px"
-                >
-                  <a href="" class="mb-menu-link" download target="_blank">
-                    <i
-                      class="bi bi-file-pdf text-dark"
-                      style="font-size: 18px"
-                    ></i>
-                    <span class="title">EULA for Bitdefender BOX </span>
-                  </a>
-                </div>
-              </div>
-
-              <div class="col-lg-3">
-                <div
-                  class="card p-4 hover-overlay animate-dark"
-                  style="cursor: pointer; width: 100%; height: 100px"
-                >
-                  <a href="" class="mb-menu-link" download target="_blank">
-                    <i
-                      class="bi bi-file-pdf text-dark"
-                      style="font-size: 18px"
-                    ></i>
-                    <span class="title"
-                      >Bitdefender License and Services Agreement for On Premise
-                      Solutions</span
-                    >
-                  </a>
-                </div>
-              </div>
-
-              <div class="col-lg-3">
-                <div
-                  class="card p-4 hover-overlay animate-dark"
-                  style="cursor: pointer; width: 100%; height: 100px"
-                >
-                  <a href="" class="mb-menu-link" download target="_blank">
-                    <i
-                      class="bi bi-file-pdf text-dark"
-                      style="font-size: 18px"
-                    ></i>
-                    <span class="title"
-                      >Bitdefender License and Services Agreement Cloud Solution
-                      for End Users</span
-                    >
-                  </a>
+                <div class="account-orders-wrap">
+                  <h5 class="mb-3">Order History</h5>
+                  <div class="wrap-account-order">
+                    <table>
+                      <thead>
+                        <tr>
+                          <th class="text-md fw-medium">Order ID</th>
+                          <th class="text-md fw-medium">Date</th>
+                          <th class="text-md fw-medium">Status</th>
+                          <th class="text-md fw-medium">Total</th>
+                          <th class="text-md fw-medium">Action</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr class="tf-order-item">
+                          <td class="text-md">#12345</td>
+                          <td class="text-md">15 May 2025</td>
+                          <td class="text-md text-delivered">Send Mail</td>
+                          <td class="text-md">₹1,014.00</td>
+                          <td>
+                            <a href="product-details.html">Detail</a>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-
-          <div class="mb-5">
-            <div class="flat-title relative mb_5">
-              <h3 class="title fw-normal fst-italic font-3 letter-0">
-                Warranties
-              </h3>
-            </div>
-            <div class="row gy-3">
-              <div class="col-lg-3">
-                <div
-                  class="card p-4 hover-overlay animate-dark"
-                  style="cursor: pointer; width: 100%; height: 100px"
-                >
-                  <a href="" class="mb-menu-link" download target="_blank">
-                    <i
-                      class="bi bi-file-pdf text-dark"
-                      style="font-size: 18px"
-                    ></i>
-                    <span class="title"
-                      >Warranty for Bitdefender BOX – English Edition</span
-                    >
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
+          <!-- /Account -->
         </div>
-      </section>
-
-      <!-- awards end -->
+      </div>
+      <!-- /Main Content -->
 
       <!-- Footer -->
       <footer id="footer" class="footer-default xl-pb-70">
